@@ -1,38 +1,188 @@
-{% extends "base.html" %}
+{% extends "indexbase.html" %}
 {% block title %}Index{% endblock %}
 {% block head %}
     {{ super() }}
-    <style type="text/css">
-        .important {
-            color: #336699;
-        }
-    </style>
+
 {% endblock %}
 {% block content %}
+    {% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/custom.css')}}">
+    {% endblock %}
+    <div class="container bg-grey mt-2">
+    <h5 class="display-6 text-center ">Python is named after TV series, “Monty Python’s Flying Circus”</h5>
+    <!--  <p class="lead"></p>-->
+</div>
 
-    <h1>HTML Form</h1>
+<!-- Page content-->
 
-    <form action="/basicform" method="POST">
-        <label for="value1">Value 1:</label><br>
-        <input type="text" id="value1" name="value1" value="1"><br>
-        <label for="value2">Value 2:</label><br>
-        <input type="text" id="value2" name="value2" value="2"><br>
-        <fieldset>
-        <legend>Operation</legend>
-          <div>
-            <input type="radio" name="operation" id="addition" value="addition" checked>
-            <label for="addition">addition</label>
-          </div>
-          <div>
-            <input type="radio" name="operation" id="subtraction" value="subtraction">
-            <label for="subtraction">subtraction</label>
-          </div>
-          <div>
-            <input type="radio" name="operation" id="multiplication" value="multiplication">
-            <label for="multiplication">multiplication</label>
-          </div>
-        </fieldset>
+<div class="container  mt-5">
+    <div class="row">
 
-        <input type="submit" value="Submit">
-    </form>
+        <div class="col-lg-8">
+            <div class="container  bg-grey ">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h2 id="getting_started" class="fw-bolder mb-1">A Simple Calculator Using Flask </h2>
+                        <!-- Post meta content-->
+                        <div class="text-muted fst-italic mb-2">Posted on November 23, 2021 by Now-U-Know. Image Credit:Kowsalya Vijayan</div>
+                        <!-- Post categories-->
+                        <!--                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>-->
+                        <!--                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>-->
+                    </header>
+                    <!-- Preview image figure-->
+
+                    <!-- Post content-->
+
+                    <section class="mb-5">
+                        <div class="row">
+                        <div class="col">
+
+                            <img class="img-fluid rounded mb-2" src="{{url_for('static', filename='images/flask.png')}}" alt="..." />
+
+                        </div>
+                        <div class="col-md-5 text-align:justify">
+
+                            <p style="text-align:justify"><i><b>Flask</b></i> is a web application framework written in Python. It was developed by <i>Armin Ronacher</i>, who led a team of international Python enthusiasts called <i>Poocco</i>. Flask is based on the Werkzeg WSGI toolkit and the Jinja2 template engine.
+
+                                Unlike the Django framework,
+                            </p>
+
+
+                        </div>
+
+
+                            <p>Flask is very Pythonic. It’s easy to get started with Flask, because it doesn’t have a huge learning curve.
+
+                                On top of that it’s very explicit, which increases readability.</p>
+                            <h6 class=text-muted id="WSGI"><i>WSGI</i></h6>
+                            <p>The Web Server Gateway Interface (Web Server Gateway Interface, WSGI) has been used as a standard for Python web application development. WSGI is the specification of a common interface between web servers and web applications.</p>
+                            <h6 class=text-muted id="Jinja"><i>jinja2</i></h6>
+                            <p>jinja2 is a popular template engine for Python.A web template system combines a template with a specific data source to render a dynamic web page.</p>
+                            <h6 class=text-muted id="calculator"><i>Python Flask Calculator</i></h6>
+                            <p>Using flask framework, a simple calculator has been created , test the operations and you can also view the history rendered in the table below</p>
+                            <div class="col">
+                                <div class="card mb-4 mt-7  ">
+<!--                                    <h5 class="header-colorize text-uppercase ">Calculator Program</h5>-->
+
+                                    <div class="container" >
+                                        <div class="row text-md-center text-center">
+                                        <h5 class="highlight header-colorize text-uppercase " style ="margin-top:10px" >PYTHON CALCULATOR </h5>
+                                        </div>
+                                        <div class="form-group mb-4 " style ="margin-top:20px">
+                                            <label for="value1">Number 1:</label>
+                                            <input type="text" class="form-control" id="value1" placeholder="Enter first number" name="value1">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="value2">Number 2:</label>
+                                            <input type="text" class="form-control" id="value2" placeholder="Enter second number" name="value2">
+                                        </div>
+
+                                        <fieldset class="form-group mb-3">
+                                            <div class="row">
+                                                <legend class="col-form-label col-md-2 pt-0">Operations</legend>
+                                                <div class="col-sm-10">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="operation" id="addition" value="addition" checked>
+                                                        <label class="form-check-label" for="addition">
+                                                            Addition
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="operation" id="subtraction" value="subtraction">
+                                                        <label class="form-check-label" for="subtraction">
+                                                            Subtraction
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="operation" id="multiplication" value="multiplication">
+                                                        <label class="form-check-label" for="multiplication">
+                                                           Multiplication
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="operation" id="division" value="division">
+                                                        <label class="form-check-label" for="division">
+                                                            Division
+                                                        </label>
+                                                    </div>
+                                                </div></div>
+                                                    </fieldset>
+
+                                                        <div class="row">
+                                                            <div class="col text-center">
+                                                        <button type="submit" class="btn btn-primary mb-3 ">Submit</button>
+                                                    </div></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </section>
+
+                </article>
+            </div>
+        </div>
+
+        <!-- Side widgets-->
+
+        <div class="col-lg-4 mt-4">
+            <div class="card mb-4 mt-7 bg-grey ">
+                <h5 class="highlight header-colorize text-uppercase ">Table of contents</h5>
+                <div class="card-body  header-colorize " style="padding-left: 80px"><a href="#getting_started">Getting Started</a></div>
+                <div class="card-body  header-colorize " style="padding-left: 80px"><a href="#calculator">Python Flask Calculator</a></div>
+                <div class="card-body  header-colorize " style="padding-left: 80px"><a href="#cmd">Calculation history</a></div>
+
+
+
+            </div>
+            <!-- Search widget-->
+
+            <div class="card mb-4 ">
+                <div class="card-header text-md-center text-center">Code Repositories for Hand On training</div>
+                <div class="card-body">
+                    <div class="row text-md-center text-center" >
+                        <!--                        <div class="col-md-6">-->
+                        <!--                            <ul class="list-inline-item  mb-0">-->
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/python_concepts">python_basic_concepts</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/SOLID">Understanding SOLID principles</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/branch1">AAA testing with External data</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/calc_part2">OOPS concepts using Calculator Program</a></p>
+                        <p><a href="  https://github.com/njitvjk/calc2/tree/calc_part3">Calculator Program with tuples</a></p>
+
+
+
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4 ">
+                <div class="card-header text-md-center text-center">Online Resources</div>
+                <div class="card-body">
+                    <div class="row text-md-center text-center" >
+                        <!--                        <div class="col-md-6">-->
+                        <!--                            <ul class="list-inline-item  mb-0">-->
+                        <p ><a href="https://www.programiz.com/python-programming">Python for beginners</a></p>
+                        <p ><a href="https://www.python.org/">Official Python Website</a></p>
+                        <p ><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Wikipedia-Python</a><p>
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
 {% endblock %}
