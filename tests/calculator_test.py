@@ -25,7 +25,7 @@ def test_calculator_subtract_static(clear_history_fixture):
     #using Tuple instead of args because we can pack as much data as we need into the tuple
     my_tuple = (1.0,2.0,3.0)
     Calculator.subtraction(my_tuple)
-    assert Calculator.get_last_result_value() == -6.0
+    assert Calculator.get_last_result_value() == -4.0
 
 def test_calculator_multiply_static(clear_history_fixture):
     """Testing the subtract method of the calc"""
