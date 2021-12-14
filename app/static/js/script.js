@@ -8,6 +8,8 @@ $( document ).ready(function() {
 	    
 	});
 
+
+
     // SCROLL TO DIV
 	$('.nav-item a, .mouse-down a').on('click', function(event) {
 	    var $anchor = $(this);
