@@ -1,36 +1,39 @@
 """Testing CSV Functions"""
-import pandas
+
 import os.path
+import pandas as pd
 from csvmanager.write import Write
 from csvmanager.read import Read
-import pandas as pd
+
 
 def test_write_csv():
     """testing that our calculator has a static method for addition"""
-    #Arrange
+    # Arrange
     filename = 'csv_output.csv'
     path = 'tests/test_data'
-    fullPath = path + '/' + filename
+    fullpath = path + '/' + filename
     name_dict = {
         'value1': ['1.0', '2.0', '3.0', '4.0'],
         'value2': ['1.0', '2.0', '3.0', '4.0'],
         'result': [2.0, 4.0, 6.0, 8.0]
     }
-    os.remove(fullPath)
-    df = pd.DataFrame(name_dict)
-    #Act
+    os.remove(fullpath)
+    df_data = pd.DataFrame(name_dict)
+    # Act
 
-    Write.DataFrameToCSVFile(fullPath,df)
-    #Assert
-    assert os.path.exists(fullPath)
+    Write.dataframetocsvfile(fullpath, df_data)
+    # Assert
+    assert os.path.exists(fullpath)
 
+
+# pylint: disable= C0123
 def test_read_csv():
     """testing that our calculator has a static method for addition"""
-    #Arrange
+    # Arrange
     filename = 'csv_output.csv'
     path = 'tests/test_data'
-    fullPath = path + '/' + filename
-    #Act
-    df = Read.DataFrameFromCSVFile(fullPath)
-    #Assert
-    assert type(df) is pandas.DataFrame
+    fullpath = path + '/' + filename
+    # Act
+    df_data1 = Read.dataframefromcsvfile(fullpath)
+    # Assert
+    assert type(df_data1) is pd.DataFrame

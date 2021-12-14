@@ -75,17 +75,24 @@
                         </div>
                         <div class="col text-align:justify">
 
-                            <p style="text-align:justify"><i><b>Python</b> </i>is one of the powerful languages and it is easy to understand.It has an effective data strutures and also simple to implement OOPS concept.It is an ideal language for scripting and rapid application development in many areas on most platforms.
-                                The Python interpreter and the library are freely
+                            <p style="text-align:justify">we need to set up our files to run a Flask application. For this example I created two folders which are <b>static</b> and <b>templates</b> in my project.<p/>
+                                <p><i>(Remember static and templates are folders we create in our root directory in order to let our flask app know where to look)</i>
 
                               </p>
+                            <p> folder <b>Calc</b> contains the arithematic operations methods.They process all inputs from the user form in webpage and returns back the output</p>
                             </div>
 
 
+                            <p>The image represents the form for calculation, all arithematic operations are available.The User has to provide input and it shows the output</p>
 
+                            <img class="img-fluid rounded mb-2" src="{{url_for('static', filename='images/calc1.png')}}" alt="..." />
 
+                             <h6 class=text-muted id="history"><i>Calculator Output and History </i></h6>
+                            <p style="text-align:justify">You can see Output displayed below and Also the history of Calculations are shown to the user in the form of table. The text box validation is done and if a value is empty or any special characters are
+                                given , the form shows a flash message for invalid output
 
-
+                              </p>
+                             <img class="img-fluid rounded mb-2" src="{{url_for('static', filename='images/calc2.png')}}" alt="..." />
 
 
 
@@ -108,7 +115,7 @@
                 <h5 class="highlight header-colorize text-uppercase ">Table of contents</h5>
                 <div class="card-body  header-colorize " style="padding-left: 80px"><a href="#getting_started">Getting Started</a></div>
                 <div class="card-body  header-colorize " style="padding-left: 80px"><a href="#calculator">Python Flask Calculator</a></div>
-                <div class="card-body  header-colorize " style="padding-left: 80px"><a href="#cmd">Calculation history</a></div>
+                <div class="card-body  header-colorize " style="padding-left: 80px"><a href="#history">Calculation history</a></div>
 
 
 

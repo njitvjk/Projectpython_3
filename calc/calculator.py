@@ -32,5 +32,3 @@ class Calculator:
         """ multiplication number from result"""
         Calculations.add_division_calculation_to_history(tuple_values)
         return True
-
-
