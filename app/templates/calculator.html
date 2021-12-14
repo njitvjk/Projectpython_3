@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/custom.css')}}">
     {% endblock %}
     <div class="container bg-grey mt-2">
-    <h5 class="display-6 text-center ">Python is named after TV series, “Monty Python’s Flying Circus”</h5>
+    <h5 class="display-6 text-center ">"A Zen of Python" is an interesting poem about Python</h5>
     <!--  <p class="lead"></p>-->
 </div>
 
@@ -58,87 +58,43 @@
 
                                 On top of that it’s very explicit, which increases readability.</p>
                             <h6 class=text-muted id="WSGI"><i>WSGI</i></h6>
-                            <p>The Web Server Gateway Interface (Web Server Gateway Interface, WSGI) has been used as a standard for Python web application development. WSGI is the specification of a common interface between web servers and web applications.</p>
+                            <p style="text-align:justify">The Web Server Gateway Interface (Web Server Gateway Interface, WSGI) has been used as a standard for Python web application development. WSGI is the specification of a common interface between web servers and web applications.</p>
                             <h6 class=text-muted id="Jinja"><i>jinja2</i></h6>
-                            <p>jinja2 is a popular template engine for Python.A web template system combines a template with a specific data source to render a dynamic web page.</p>
+                            <p style="text-align:justify">jinja2 is a popular template engine for Python.A web template system combines a template with a specific data source to render a dynamic web page.</p>
                             <h6 class=text-muted id="calculator"><i>Python Flask Calculator</i></h6>
-                            <p>Using flask framework, a simple calculator has been created , test the operations and you can also view the history rendered in the table below</p>
-                            <div class="col">
-                                <div class="card mb-4 mt-7  ">
-<!--                                    <h5 class="header-colorize text-uppercase ">Calculator Program</h5>-->
+                            <p style="text-align:justify">Using flask framework, a simple calculator has been created , click the badge on the Introduction section to test the operations and you can also view the history rendered a nice table format.</p>
+                            <p style="text-align:justify">The Calculator used the common flash functionalities like
+                            <ul style="padding-left:50px "><i><li>Importing flask </li><li>Creating the flask instance</li>
+                            <li>Creating routes in the application</li>
+                            <li>Creating methods that are invoked when a specific route is called</li></i></ul>
+                            </p>
+                             <div class="col-md-5">
 
-                                    <div class="container" >
-                                        <div class="row text-md-center text-center">
-                                        <h5 class="highlight header-colorize text-uppercase " style ="margin-top:10px" >PYTHON CALCULATOR </h5>
-                                        </div>
-                                        <form action="/basicform" method="POST">
-                                        <div class="form-group mb-4 " style ="margin-top:20px">
-                                            <label for="value1">Number 1:</label>
-                                            <input type="text" class="form-control" id="value1" placeholder="Enter first number" name="value1">
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <label for="value2">Number 2:</label>
-                                            <input type="text" class="form-control" id="value2" placeholder="Enter second number" name="value2">
-                                        </div>
+                            <img class="img-fluid rounded mb-2" src="{{url_for('static', filename='images/flask_1.png')}}" alt="..." />
 
-                                        <fieldset class="form-group mb-3">
-                                            <div class="row">
-                                                <legend class="col-form-label col-md-2 pt-0">Operations</legend>
-                                                <div class="col-sm-10">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="operation" id="addition" value="addition" checked>
-                                                        <label class="form-check-label" for="addition">
-                                                            Addition
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="operation" id="subtraction" value="subtraction">
-                                                        <label class="form-check-label" for="subtraction">
-                                                            Subtraction
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="operation" id="multiplication" value="multiplication">
-                                                        <label class="form-check-label" for="multiplication">
-                                                           Multiplication
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="operation" id="division" value="division">
-                                                        <label class="form-check-label" for="division">
-                                                            Division
-                                                        </label>
-                                                    </div>
-                                                </div></div>
-                                                    </fieldset>
-
-                                                        <div class="row">
-                                                            <div class="col text-center">
-                                                        <button type="submit" class="btn btn-primary mb-3 " value="submit">Submit</button>
-                                                    </div></div>
-                                        </form>
-
-
-                                    </div>
-                                </div>
-                                {% if calculation_performed ==True %}
-                                 <div class="container mb-3" style="background-color: #f2d2d2">
-                                 <div class="row">
-                                     <div class="col">
-                                     <p style="margin-top: 10px"> The {{ operation }} of {{ value1 }} and {{ value2 }} is {{ result }}</p>
-                                         </div>
-                                 </div>
-                                    </div>
-                                {% endif %}
-
-
-
-
-                            </div>
                         </div>
+                        <div class="col text-align:justify">
+
+                            <p style="text-align:justify"><i><b>Python</b> </i>is one of the powerful languages and it is easy to understand.It has an effective data strutures and also simple to implement OOPS concept.It is an ideal language for scripting and rapid application development in many areas on most platforms.
+                                The Python interpreter and the library are freely
+
+                              </p>
+                            </div>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
                     </section>
 
                 </article>

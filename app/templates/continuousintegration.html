@@ -1,0 +1,139 @@
+{% extends "indexbase.html" %}
+{% block title %}Contiuous_Integration{% endblock %}
+{% block head %}
+    {{ super() }}
+
+{% endblock %}
+{% block content %}
+    {% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/custom.css')}}">
+    {% endblock %}
+
+<div class="container bg-grey mt-2">
+    <h5 class="display-6 text-center ">Python influenced JavaScript</h5>
+    <!--  <p class="lead"></p>-->
+</div>
+
+<!-- Page content-->
+
+<div class="container  mt-5">
+    <div class="row">
+
+        <div class="col-lg-8">
+            <div class="container  bg-grey ">
+            <!-- Post content-->
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h2 class="fw-bolder mb-1" id="introduction">Continuous Integration </h2>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Posted on December 13, 2021 by Now-U-Know. Image Credit:Kowsalya Vijayan</div>
+                    <!-- Post categories-->
+                    <!--                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>-->
+                    <!--                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>-->
+                </header>
+                <!-- Preview image figure-->
+
+                <!-- Post content-->
+
+                <section class="mb-5">
+                    <div class="row">
+
+                    <div class="row  ">
+
+                    <div class="col">
+
+                        <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/ci.JPG')}}" alt="..." />
+                    </div>
+                        <div class="col-md-6">
+
+                        <p style="text-align:justify">
+
+                            <p><i><b>Continuous Integration</b> is the practice of merging in small code changes frequently - rather than merging in a large change at the end of a development cycle. The goal is to build healthier software by developing and testing in smaller increments. </i></p>
+                        <p>Continuous integration aids in :</p>
+                            <ul><li>Smaller Code Changes</li><li>Fault Isolations</li><li>More Test Reliability</li>
+                            </ul>
+                        </div>
+                        <p>There are number of tools to help with CI and Travis is one among them.</p>
+
+                        <h6 class="text-muted" id="travis"><i>Third Party tool- <b>Travis-CI</b></i></h6>
+                        <p> As a continuous integration platform, Travis CI supports your development process by automatically building and testing code changes, providing immediate feedback on the success of the change. Travis CI can also automate other parts of your development process by managing deployments and notifications.
+                        </p>
+                        <p> Travis needs a repo to be created and authorized</p>
+
+
+
+                        <p><i><b>Travis build for Calculator program </b></i></p>
+                            <p> Below you can see the repo used in travis:</p>
+                        <br>
+
+                            <img class="img-fluid rounded mb-2 "  src="{{url_for('static', filename='images/travis.JPG')}}" alt="..." />
+
+                        <p> The build in travis:</p>
+                        <img class="img-fluid rounded mb-2 "  src="{{url_for('static', filename='images/travis-2.JPG')}}" alt="..." />
+                        <p> The coverage in travis:</p>
+                        <img class="img-fluid rounded mb-2 "  src="{{url_for('static', filename='images/travis_3.JPG')}}" alt="..." />
+
+
+
+
+                    </div></div>
+                </section>
+
+            </article>
+            </div>
+        </div>
+
+        <!-- Side widgets-->
+
+        <div class="col-lg-4 mt-4">
+            <!-- Search widget-->
+            <div class="card mb-4 mt-7 bg-grey ">
+                <h5 class="highlight header-colorize text-uppercase ">Table of contents</h5>
+                <p class="header-colorize" style="padding-left: 120px"><a href="#introduction">Introduction </a></p>
+
+                <p class="header-colorize " style="padding-left: 120px"><a href="#travis">Travis CI</a></p>
+
+
+
+
+            </div>
+            <div class="card mb-4 ">
+                <div class="card-header text-md-center text-center">Code Repositories for Hand On training</div>
+                <div class="card-body">
+                    <div class="row text-md-center text-center" >
+                        <!--                        <div class="col-md-6">-->
+                        <!--                            <ul class="list-inline-item  mb-0">-->
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/python_concepts">python_basic_concepts</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/SOLID">Understanding SOLID principles</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/branch1">AAA testing with External data</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/calc_part2">OOPS concepts using Calculator Program</a></p>
+                        <p ><a href="  https://github.com/njitvjk/calc2/tree/calc_part3">Calculator Program with tuples</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4 ">
+                <div class="card-header text-md-center text-center">Online Resources</div>
+                <div class="card-body">
+                    <div class="row text-md-center text-center" >
+                        <p ><a href="https://www.programiz.com/python-programming">Python for beginners</a></p>
+                        <p ><a href="https://www.python.org/">Official Python Website</a></p>
+                        <p ><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Wikipedia-Python</a><p>
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <!-- Categories widget-->
+
+            <!-- Side widget-->
+
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

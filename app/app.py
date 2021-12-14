@@ -1,15 +1,18 @@
 """A simple flask web app"""
 import re
-from csv import DictWriter
+
 
 import pandas
 import pandas as pd
 from flask import Flask, request, url_for
 from flask import render_template
+
+
 from calc.calculator import Calculator
-from calc.history.calculations import Calculations
+
 
 app = Flask(__name__)
+
 
 
 @app.route("/")
@@ -24,16 +27,16 @@ def calculator():
 
     if request.method == 'POST':
         # get the values out of the form
-        m = re.match(r'^\-?\d*[.@]?\d*$', request.form['value1'])
-        n = re.match(r'^\-?\d*[.@]?\d*$', request.form['value2'])
+        m = re.match(r'^\-?\d*[\w.@]?\d*$', request.form['value1'])
+        n = re.match(r'^\-?\d*[\w.@]?\d*$', request.form['value2'])
         if request.form['value1'] == '' or request.form['value2'] == '':
             error = 'Invalid Input: A value for operation cannot be empty.'
             return render_template('basicform.html', error=error)
         elif m is None or n is None:
-            error = 'Invalid Input: Values can only be numeric or float'
+            error = 'Invalid Input: Values can only be numbers'
             return render_template('basicform.html', error=error)
         elif n is None:
-            error = 'Invalid Input: Values can only be numeric or float'
+            error = 'Invalid Input: Values can only be numbers'
             return render_template('basicform.html', error=error)
 
         else:
@@ -84,3 +87,13 @@ def basicform():
 def basics():
     """Post Request Handling"""
     return render_template('basics.html')
+
+@app.route("/continuousintegration")
+def continuousintegration():
+    """Post Request Handling"""
+    return render_template('continuousintegration.html')
+
+@app.route("/designpatterns")
+def designpatterns():
+    """Post Request Handling"""
+    return render_template('designpatterns.html')

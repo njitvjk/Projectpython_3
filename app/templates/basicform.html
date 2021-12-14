@@ -3,8 +3,10 @@
 {% block head %}
     {{ super() }}
 
+
 {% endblock %}
 {% block content %}
+
 
 
     {% block styles %}
@@ -115,14 +117,18 @@
                                  </div>
                                  </div>
                                     <div class="container mb-3 bg-white">
-                                 <div class="row">
+
+                                    <div class="row">
+{#                                    Adding beautiful tables #}
+
 
 {#                                 <div class="row text-md-center text-center">#}
                                         <h5 class="highlight header-colorize text-uppercase " style ="margin-top:10px" >CALCULATION HISTORY</h5>
 {#                                        </div>#}
-                                 <div class="col">
+{#                                 <div class="col">#}
                                       <div class="table-responsive-md">
-                                         <table id="data" class="table table-striped text-overflow: ellipsis">
+
+                                         <table id="data" class="table table-striped text-overflow: ellipsis "  data-sort-order="desc">
                                          <thead>
                                          <tr>
                                         <th >Operation</th>
@@ -133,7 +139,7 @@
                                         <tbody>
                                           {% for value in myData%}
                                         <tr>
-                                        <td>{{ value[0] }}</td>
+                                            <td>{{ value[0] }}</td>
                                         <td>{{ value[1] }}</td>
                                         <td>{{ value[2] }}</td>
                                         <td>{{ value[3] }}</td>
@@ -149,7 +155,8 @@
 
                                 {% endif %}
                             </div>
-                      </div>
+{#                        div1#}
+{#                      </div>#}
                     </section>
 
                 </article>
@@ -198,6 +205,7 @@
         </div>
     </div>
 </div>
+
 
 
 {% endblock %}

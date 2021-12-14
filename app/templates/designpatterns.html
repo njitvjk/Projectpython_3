@@ -1,0 +1,183 @@
+{% extends "indexbase.html" %}
+{% block title %}Basics{% endblock %}
+{% block head %}
+    {{ super() }}
+
+{% endblock %}
+{% block content %}
+
+
+    {% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/custom.css')}}">
+    {% endblock %}
+
+
+<!-- Page content-->
+<div class="container bg-grey mt-2">
+    <h5 class="display-6 text-center ">Indentation is mandatory with Python </h5>
+    <!--  <p class="lead"></p>-->
+</div>
+
+<!-- Page content-->
+
+<div class="container  mt-5">
+    <div class="row">
+
+        <div class="col-lg-8">
+            <div class="container  bg-grey ">
+            <!-- Post content-->
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h2 class="fw-bolder mb-1" id="getting_started">Design Patterns in Python </h2>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Posted on December 13, 2021 by Now-U-Know. Image Credit:<a href="https://refactoring.guru/design-patterns/python">RefactoringGuru.com</a></div>
+                    <!-- Post categories-->
+                    <!--                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>-->
+                    <!--                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>-->
+                </header>
+                <!-- Preview image figure-->
+
+                <!-- Post content-->
+
+                <section class="mb-5">
+                    <div class="row">
+                        <div class="col">
+
+                            <img class="img-fluid rounded mb-2" src="{{url_for('static', filename='images/design_pattern.JPG')}}" alt="..." />
+
+                        </div>
+                        <div class="col-md-5 text-align:justify">
+
+                            <p style="text-align:justify"><i><b>Design patterns</b> </i> are typical solutions to commonly occurring problems in software design. They are like pre-made blueprints that you can customize to solve a recurring design problem in your code.</p>
+
+
+                        </div>
+                        <p>Patterns are often confused with algorithms, because both concepts describe typical solutions to some known problems. While an algorithm always defines a clear set of actions that can achieve some goal, a pattern is a more high-level description of a solution. The code of the same pattern applied to two different programs may be different.</p>
+                        <h6 class=text-muted id="ds1"><i>Creational Design Pattern:</i></h6>
+                        <p>Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.</p>
+
+                        <ul style="padding-left:50px "><li><p><i>Factory Method</i>-Provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+                            </p> </li>
+
+                            <li><p><i>Abstract Factory Method</i>-lets you produce families of related objects without specifying their concrete classes.</p></li>
+                            <li><p> <i>Builder</i>-The pattern allows you to produce different types and representations of an object using the same construction code.</p></li>
+                            <li><p><i>prototype</i>-lets you copy existing objects without making your code dependent on their classes.</p></li>
+                            <li><p><i>Singleton</i>-lets you ensure that a class has only one instance, while providing a global access point to this instance.</p></li>
+                        </ul>
+
+
+
+                        <h6 class=text-muted id="ds2"><i>Structural Design Pattern:</i></h6>
+                        <ul style="padding-left:50px "><li><p>Structural patterns explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.</p></li>
+                            <li><p><i>Bridge</i>-lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.</p></li>
+                            <li><p><i>Composite</i>-lets you compose objects into tree structures and then work with these structures as if they were individual objects.</p></li>
+                            <li><p><i>Decorator</i>-lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.</p></li>
+                            <li><p><i>Facade</i>-provides a simplified interface to a library, a framework, or any other complex set of classes.</p></li>
+                            <li><p><i>Flyweight</i>-lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.</p></li>
+                            <li><p><i>Proxy</i>-lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.</p></li>
+
+                            </ul>
+
+                        <h6 class=text-muted id="ds3"><i>Behavioral Design Pattern:</i></h6>
+                        <ul style="padding-left:50px "><li><p>Behavioral design patterns are concerned with algorithms and the assignment of responsibilities between objects.</p></li>
+                            <li><p><i>Chain of Responsibility</i>- lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.</p></li>
+                            <li><p><i>Command</i>-turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.</p></li>
+                            <li><p><i>Iterator</i>-lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).</p></li>
+                            <li><p><i>Mediator</i>- lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.</p></li>
+                            <li><p><i>Memento</i>-lets you save and restore the previous state of an object without revealing the details of its implementation.</p></li>
+                            <li><p><i>Observer</i>-lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.</p></li>
+                            <li><p><i>State</i>-lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.</p></li>
+                            <li><p><i>Strategy</i>-lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.</p></li>
+                            <li><p><i>Template Method</i>- defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.</p></li>
+                            <li><p><i>Visitor</i>- lets you separate algorithms from the objects on which they operate.</p></li></ul>
+
+                        <h6 ><i>Detailed Explanation</i></h6>
+                        <p> We are now going to pick two topics: <b>Factory</b> and <b>Facade</b> Method and let us see its details.</p>
+                        <h6 class=text-muted id="factory"><i>Factory Method</i></h6>
+                        <p>Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.</p>
+
+                            <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/structure.png')}}" alt="..." />
+                            <ul style="padding-left:50px "> <li><p>The <i>Product</i> declares the interface, which is common to all objects that can be produced by the creator and its subclasses.</p></li>
+                            <li><p><i>Concrete Products</i> are different implementations of the product interface.</p></li>
+                            <li><p><i> Creator</i> class declares the factory method that returns new product objects. It’s important that the return type of this method matches the product interface.</li>
+                            <li><p><i>Concrete Creators</i> override the base factory method so it returns a different type of product.</p></li></ul>
+
+                        <p>The factory method doesn’t have to create new instances all the time. It can also return existing objects from a cache, an object pool, or another source.</p>
+
+                        <h6 class=text-muted id="facade"><i>Facade </i></h6>
+                        <p>Facade is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.A facade is a class that provides a simple interface to a complex subsystem which contains lots of moving parts. A facade might provide limited functionality in comparison to working with the subsystem directly. However, it includes only those features that clients really care about.</p>
+                        <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/facade.png')}}" alt="..." />
+                        <p><ul style="padding-left:50px "><li>The <i>Facade </i>provides convenient access to a particular part of the subsystem’s functionality. It knows where to direct the client’s request and how to operate all the moving parts.</li>
+                        <li>An <i>Additional Facade </i> class can be created to prevent polluting a single facade with unrelated features that might make it yet another complex structure. Additional facades can be used by both clients and other facades.</li>
+                        <li>The<i> Complex Subsystem</i> consists of dozens of various objects. To make them all do something meaningful, you have to dive deep into the subsystem’s implementation details, such as initializing objects in the correct order and supplying them with data in the proper format.
+                        <br>Subsystem classes aren’t aware of the facade’s existence. They operate within the system and work with each other directly.
+                        </li>
+                        <li>The <i>Client</i> uses the facade instead of calling the subsystem objects directly.</li></ul>
+
+
+
+                    </div>
+
+                </section>
+
+            </article>
+            </div>
+        </div>
+
+        <!-- Side widgets-->
+
+        <div class="col-lg-4 mt-4">
+            <!-- Search widget-->
+            <div class="card mb-4 mt-7 bg-grey ">
+                <h5 class="highlight header-colorize text-uppercase ">Table of contents</h5>
+                <p class="header-colorize " style="padding-left: 90px"><a href="#getting_started">Introduction </a></p>
+
+                <p class="header-colorize " style="padding-left: 90px"><a href="#ds1">Creational Design Pattern</a></p>
+                <p class="header-colorize " style="padding-left: 90px"><a href="#ds2">Structural Design Pattern</a></p>
+                <p class="header-colorize " style="padding-left: 90px"><a href="#ds3">Behavioral Design Pattern</a></p>
+
+                <p class="header-colorize " style="padding-left: 90px"><a href="#factory">Factory Method</a></p>
+                <p class="header-colorize " style="padding-left: 90px"><a href="#facade">Facade Method</a></p>
+
+
+
+
+            </div>
+            <div class="card mb-4 ">
+                <div class="card-header text-md-center text-center">Code Repositories for Hand On training</div>
+                <div class="card-body">
+                    <div class="row text-md-center text-center" >
+                        <!--                        <div class="col-md-6">-->
+                        <!--                            <ul class="list-inline-item  mb-0">-->
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/python_concepts">python_basic_concepts</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/SOLID">Understanding SOLID principles</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/branch1">AAA testing with External data</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/calc_part2">OOPS concepts using Calculator Program</a></p>
+                        <p ><a href="  https://github.com/njitvjk/calc2/tree/calc_part3">Calculator Program with tuples</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4 ">
+                <div class="card-header text-md-center text-center">Online Resources</div>
+                <div class="card-body">
+                    <div class="row text-md-center text-center" >
+                        <p ><a href="https://www.programiz.com/python-programming">Python for beginners</a></p>
+                        <p ><a href="https://www.python.org/">Official Python Website</a></p>
+                        <p ><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Wikipedia-Python</a><p>
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <!-- Categories widget-->
+
+            <!-- Side widget-->
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
