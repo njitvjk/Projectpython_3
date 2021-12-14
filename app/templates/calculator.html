@@ -5,12 +5,9 @@
 
 {% endblock %}
 {% block content %}
-
-
     {% block styles %}
     <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/custom.css')}}">
-        <link rel="stylesheet" href="{{url_for('static', filename='css/tables.css')}}">
     {% endblock %}
     <div class="container bg-grey mt-2">
     <h5 class="display-6 text-center ">Python is named after TV series, “Monty Python’s Flying Circus”</h5>
@@ -29,25 +26,43 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h4 id="getting_started" class="fw-bolder mb-1">A Simple Calculator Using Flask </h4>
+                        <h2 id="getting_started" class="fw-bolder mb-1">A Simple Calculator Using Flask </h2>
                         <!-- Post meta content-->
-{#                        <div class="text-muted fst-italic mb-2">Posted on December 13, 2021 by Now-U-Know. Image Credit:Kowsalya Vijayan</div>#}
-         </header>
+                        <div class="text-muted fst-italic mb-2">Posted on December 13, 2021 by Now-U-Know. Image Credit:Kowsalya Vijayan</div>
+                        <a class="badge bg-secondary text-decoration-none link-light" href="{{ url_for('calculator') }}">Try Calculator here</a>
+                        <!--                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>-->
+                    </header>
                     <!-- Preview image figure-->
 
                     <!-- Post content-->
 
+                    <section class="mb-5">
+                        <div class="row">
+                        <div class="col">
 
-                    <section class="mb-3" >
-                        <div class="row" >
+                            <img class="img-fluid rounded mb-2" src="{{url_for('static', filename='images/flask.png')}}" alt="..." />
 
-                        {% if error %}
-                        <div class="alert alert-danger error" role="alert">
-                        {{ error }}
                         </div>
-                        {% endif %}
+                        <div class="col-md-5 text-align:justify">
+
+                            <p style="text-align:justify"><i><b>Flask</b></i> is a web application framework written in Python. It was developed by <i>Armin Ronacher</i>, who led a team of international Python enthusiasts called <i>Poocco</i>. Flask is based on the Werkzeg WSGI toolkit and the Jinja2 template engine.
+
+                                Unlike the Django framework,
+                            </p>
 
 
+                        </div>
+
+
+                            <p>Flask is very Pythonic. It’s easy to get started with Flask, because it doesn’t have a huge learning curve.
+
+                                On top of that it’s very explicit, which increases readability.</p>
+                            <h6 class=text-muted id="WSGI"><i>WSGI</i></h6>
+                            <p>The Web Server Gateway Interface (Web Server Gateway Interface, WSGI) has been used as a standard for Python web application development. WSGI is the specification of a common interface between web servers and web applications.</p>
+                            <h6 class=text-muted id="Jinja"><i>jinja2</i></h6>
+                            <p>jinja2 is a popular template engine for Python.A web template system combines a template with a specific data source to render a dynamic web page.</p>
+                            <h6 class=text-muted id="calculator"><i>Python Flask Calculator</i></h6>
+                            <p>Using flask framework, a simple calculator has been created , test the operations and you can also view the history rendered in the table below</p>
                             <div class="col">
                                 <div class="card mb-4 mt-7  ">
 <!--                                    <h5 class="header-colorize text-uppercase ">Calculator Program</h5>-->
@@ -107,49 +122,23 @@
                                     </div>
                                 </div>
                                 {% if calculation_performed ==True %}
-                                 <div class="container mb-3" style="background-color:#D4EDDA">
+                                 <div class="container mb-3" style="background-color: #f2d2d2">
                                  <div class="row">
                                      <div class="col">
                                      <p style="margin-top: 10px"> The {{ operation }} of {{ value1 }} and {{ value2 }} is {{ result }}</p>
                                          </div>
                                  </div>
-                                 </div>
-                                    <div class="container mb-3 bg-white">
-                                 <div class="row">
-
-{#                                 <div class="row text-md-center text-center">#}
-                                        <h5 class="highlight header-colorize text-uppercase " style ="margin-top:10px" >CALCULATION HISTORY</h5>
-{#                                        </div>#}
-                                 <div class="col">
-                                      <div class="table-responsive-md">
-                                         <table id="data" class="table table-striped text-overflow: ellipsis">
-                                         <thead>
-                                         <tr>
-                                        <th >Operation</th>
-      	                                <th >Number1</th>
-                                        <th >Number2</th>
-	                                    <th>Result</th>
-	                                    </tr></thead>
-                                        <tbody>
-                                          {% for value in myData%}
-                                        <tr>
-                                        <td>{{ value[0] }}</td>
-                                        <td>{{ value[1] }}</td>
-                                        <td>{{ value[2] }}</td>
-                                        <td>{{ value[3] }}</td>
-
-                                        </tr>
-                                        {% endfor %}
-                                        </tbody>
-                                        </table>
-                                </div>
-                                  </div>
-                                 </div>
                                     </div>
-
                                 {% endif %}
+
+
+
+
                             </div>
-                      </div>
+                        </div>
+
+
+
                     </section>
 
                 </article>
@@ -159,7 +148,15 @@
         <!-- Side widgets-->
 
         <div class="col-lg-4 mt-4">
+            <div class="card mb-4 mt-7 bg-grey ">
+                <h5 class="highlight header-colorize text-uppercase ">Table of contents</h5>
+                <div class="card-body  header-colorize " style="padding-left: 80px"><a href="#getting_started">Getting Started</a></div>
+                <div class="card-body  header-colorize " style="padding-left: 80px"><a href="#calculator">Python Flask Calculator</a></div>
+                <div class="card-body  header-colorize " style="padding-left: 80px"><a href="#cmd">Calculation history</a></div>
 
+
+
+            </div>
             <!-- Search widget-->
 
             <div class="card mb-4 ">
@@ -198,6 +195,9 @@
         </div>
     </div>
 </div>
+
+
+
 
 
 {% endblock %}

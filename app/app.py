@@ -79,3 +79,8 @@ def calculator():
 def basicform():
     """Post Request Handling"""
     return render_template('calculator.html')
+
+@app.route("/basics")
+def basics():
+    """Post Request Handling"""
+    return render_template('basics.html')
