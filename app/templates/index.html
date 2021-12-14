@@ -4,11 +4,137 @@
     {{ super() }}
    {% endblock %}
 {% block content %}
-    <h1>Index</h1>
-    <p class="important">
-      Welcome to my awesome homepage.
-        <img src="{{ url_for('static', filename='images/sample.jpeg') }}">
-    </p>
+    {% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/custom.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/tables.css')}}">
+    {% endblock %}
+    <div class="container bg-grey mt-2">
+    <h5 class="display-6 text-center ">Python is named after TV series, “Monty Python’s Flying Circus”</h5>
+    <!--  <p class="lead"></p>-->
+</div>
 
-<a href="/good/1.0/2.0">One Plus Two Good</a><br><a href="/bad/1/2">One Plus Two Bad</a>
+<!-- Page content-->
+
+<div class="container  mt-5">
+    <div class="row">
+
+        <div class="col-lg-8">
+            <div class="container  bg-grey ">
+            <!-- Post content-->
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h2 id="getting_started" class="fw-bolder mb-1">Introduction </h2>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Posted on December 13, 2021 by Now-U-Know. Image Credit:Kowsalya Vijayan</div>
+                    <!-- Post categories-->
+                    <!--                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>-->
+                    <!--                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>-->
+                </header>
+                <!-- Preview image figure-->
+
+                <!-- Post content-->
+
+                <section class="mb-5">
+                    <div class="row">
+                        <div class="col">
+
+                            <img class="img-fluid rounded mb-2" src="{{url_for('static', filename='images/home-1.JPG')}}" alt="..." />
+
+                        </div>
+                        <div class="col-md-5 text-align:justify">
+
+                            <p style="text-align:justify"><i><b>Python</b></i> was conceived in the late 1980s by <i>Guido van Rossum</i> at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC programming language.Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented
+                                </p>
+
+
+                        </div>
+                        <p>and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library. Check <a href="pylint.org">pylint.org</a> for more details</p>
+                        <h6 class=text-muted id="installation"><i>Installation</i></h6>
+                        <ul style="padding-left:50px "><li><p>Download the latest version of Python from <a href="https://www.python.org/downloads/">Downloads</a> </p></li>
+                            <li><p>Follow steps and check <i>Add Python to environment variables.</i></p></li><li><p> you can choose the path where Python can be  installed</p></li>
+                            <li><p>You can run python after installation</p>
+                        </ul>
+                        <div class="col">
+                        <img class="img-fluid rounded mb-2" src="{{url_for('static', filename='images/install.JPG')}}" alt="..." />
+                        </div>
+                        <p></p>
+                        <h6 class=text-muted id="cmd"><i>Running Python in immediate mode</i></h6>
+                        <p>Once Python is installed, typing python in the command line will invoke the interpreter in immediate mode. We can directly type in Python code, and press Enter to get the output.</p>
+                        <div class="col">
+                        <img class="img-fluid rounded mb-2" src="{{url_for('static', filename='images/cmd_python.JPG')}}" alt="..." /></div>
+                        <h6 class=text-muted id="ide"><i>Running Python in IDE</i></h6>
+                        <p>We can use any text editing software to write a Python script file.
+
+                            We just need to save it with the .py extension. Write Python code in the file and save it. To run the file, go to Run > Run Module or simply click F5. All programs demonstrated in this website are executed using PyCharm.</p>
+                        <div class="col">
+                        <img class="img-fluid rounded mb-2" src="{{url_for('static', filename='images/ide.JPG')}}" alt="..." />
+                        </div>
+
+<!--                    <p style="text-align:justify" ><i><b>PyTest </b>is a testing framework helping you to write simple and scalable test cases for databases, APIs, or UI for python programming language. PyTest is mainly used for writing tests for APIs. It helps to write tests from simple unit tests to complex functional tests.</i></p>-->
+
+                    </div>
+
+
+
+                </section>
+
+            </article>
+            </div>
+        </div>
+
+        <!-- Side widgets-->
+
+        <div class="col-lg-4 mt-4">
+            <!-- Search widget-->
+            <div class="card mb-4 mt-7 bg-grey ">
+                <h5 class="highlight header-colorize text-uppercase ">Table of contents</h5>
+                <div class="card-body  header-colorize " style="padding-left: 80px"><a href="#getting_started">Getting Started</a></div>
+                <div class="card-body  header-colorize " style="padding-left: 80px"><a href="#installation">Installation</a></div>
+                <div class="card-body  header-colorize " style="padding-left: 80px"><a href="#cmd">Running Python in immediate mode</a></div>
+
+
+                <div class="card-body header-colorize " style="padding-left: 80px"><a href="#ide">Running Python in IDE </a></div>
+
+            </div>
+            <div class="card mb-4 ">
+                <div class="card-header text-md-center text-center">Code Repositories for Hand On training</div>
+                <div class="card-body">
+                    <div class="row text-md-center text-center">
+                        <!--                        <div class="col-md-6">-->
+                        <!--                            <ul class="list-inline-item  mb-0">-->
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/python_concepts">python_basic_concepts</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/SOLID">Understanding SOLID principles</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/branch1">AAA testing with External data</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/calc_part2">OOPS concepts using Calculator Program</a></p>
+                        <p><a href="  https://github.com/njitvjk/calc2/tree/calc_part3">Calculator Program with tuples</a></p>
+
+
+
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4 ">
+                <div class="card-header text-md-center text-center">Online Resources</div>
+                <div class="card-body">
+                    <div class="row text-md-center text-center" >
+<!--                        <div class="col-md-6">-->
+                            <!--                            <ul class="list-inline-item  mb-0">-->
+                            <p ><a href="https://www.programiz.com/python-programming">Python for beginners</a></p>
+                            <p ><a href="https://www.python.org/">Official Python Website</a></p>
+                            <p ><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Wikipedia-Python</a><p>
+<!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <!-- Categories widget-->
+
+            <!-- Side widget-->
+
+        </div>
+    </div>
+</div>
 {% endblock %}

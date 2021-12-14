@@ -1,0 +1,282 @@
+{% extends "indexbase.html" %}
+{% block title %}Basics{% endblock %}
+{% block head %}
+    {{ super() }}
+
+{% endblock %}
+{% block content %}
+
+
+    {% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/custom.css')}}">
+    {% endblock %}
+    <div class="container bg-grey mt-2">
+        <h5 class="display-6 text-center ">Python does not support the use of pointer</h5>
+
+    </div>
+
+<!-- Page content-->
+
+<div class="container  mt-5">
+    <div class="row">
+
+        <div class="col-lg-8">
+            <div class="container  bg-grey ">
+            <!-- Post content-->
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h2 class="fw-bolder mb-1" id="getting_started">Getting Started </h2>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Posted on December 13, 2021 by Now-U-Know. Image Credit:Kowsalya Vijayan</div>
+                    <!-- Post categories-->
+                    <!--                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>-->
+                    <!--                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>-->
+                </header>
+                <!-- Preview image figure-->
+
+                <!-- Post content-->
+
+                <section class="mb-5">
+                    <div class="row">
+                        <div class="col">
+
+                            <img class="img-fluid rounded mb-2" src="{{url_for('static', filename='images/basics.JPG')}}" alt="..." />
+
+                        </div>
+                        <div class="col-md-5 text-align:justify">
+
+                            <p style="text-align:justify"><i><b>Python</b> </i>is one of the powerful languages and it is easy to understand.It has an effective data strutures and also simple to implement OOPS concept.It is an ideal language for scripting and rapid application development in many areas on most platforms.
+                                The Python interpreter and the library are freely
+
+                              </p>
+                            </div>
+                        <p>available in source or binary form for all major platforms from the web site, <a href ="https://www.python.org/">www.python.org</a></p>
+                        <br>
+                        <div class="row  ">
+                        <h6 class=text-muted id="keyword"><i>Keywords and Identifiers</i></h6>
+                        <p><i><b>Keywords</b></i> are the reserved words in Python.They cannot be used as variables or function or any other identifiers.In Python, keywords are case sensitive. </p>
+
+
+
+                            <div class="col-lg-7"><img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/keyword.JPG')}}" alt="..." /></div>
+                            <div class="col">
+
+                                <p style="text-align:justify">All the keywords except True, False and None are in lowercase and they must be written as they are. The image shows the list of all keywords.</p><p> An <i><b>identifier </b></i>is a name given to entities like class, functions, variables, etc. An identifier cannot start with a digit.</p>
+                                <!--                            <p>IPv6 is the most recent version of the Internet Protocol. This new IP address version is being deployed to fulfil the need for more Internet addresses. It was aimed to resolve issues that are associated with IPv4. With 128-bit address space, it allows 340 undecillion unique address space. DNS and IPs are designed to scale.</p>-->
+                            </div>
+                            <div></div>
+                            <hr>
+                            <h6 class=text-muted id="variables"><i>Variables</i></h6>
+                            <p>Variables are often described as boxes storing values. The variables can be labels to which a value has been assigned.</p>
+
+
+                            <div class="col">
+                                <div class="col">
+                                    <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/codesnip1.png')}}" alt="..." />
+
+                                </div>
+
+<!--                                <p style="text-align:justify">All the keywords except True, False and None are in lowercase and they must be written as they are. The image shows the list of all keywords.</p><p> An <i><b>identifier </b></i>is a name given to entities like class, functions, variables, etc. An identifier cannot start with a digit.</p>-->
+                                <!--                            <p>IPv6 is the most recent version of the Internet Protocol. This new IP address version is being deployed to fulfil the need for more Internet addresses. It was aimed to resolve issues that are associated with IPv4. With 128-bit address space, it allows 340 undecillion unique address space. DNS and IPs are designed to scale.</p>-->
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <p style="text-align:justify">The image shows the list of all keywords.In the example you can see that a variable</p>
+
+
+                                                             <!--                            <p>IPv6 is the most recent version of the Internet Protocol. This new IP address version is being deployed to fulfil the need for more Internet addresses. It was aimed to resolve issues that are associated with IPv4. With 128-bit address space, it allows 340 undecillion unique address space. DNS and IPs are designed to scale.</p>-->
+                            </div>
+                            <p><i> message</i>
+                            has been assigned with the value <i>Hello Python World</i> and the variable has been passed to print its value.</p>
+                            <p>Output:</p>
+                           <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/codesnip2.png')}}" alt="..." />
+
+                            <hr>
+
+                            <h6 class=text-muted id="strings"><i>Strings</i></h6>
+                            <p>String is a series of characters.Anything inside quotes is considered a string in Python and you can use a single or double quotes around your string.</p>
+                            <div class="col">
+                            <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/strings.JPG')}}" alt="..." />
+                            </div>
+                            <div class="col-md-4">
+
+                                <p style="text-align:justify"> To insert a variable's value into a string,place the letter<i> f</i> immediately before the opening quotation mark.
+                                    Put the braces around the names or names of any
+
+                                     </p>                               <!--                            <p>IPv6 is the most recent version of the Internet Protocol. This new IP address version is being deployed to fulfil the need for more Internet addresses. It was aimed to resolve issues that are associated with IPv4. With 128-bit address space, it allows 340 undecillion unique address space. DNS and IPs are designed to scale.</p>-->
+                            </div>
+                            <p>variable. Python will replace each variable with its value when the string is displayed.These strings are called <i>f-strings.</i>
+
+                                Use <i>/t</i> for a tab and <i>/n</i> for a space.<i>rstrip()</i> removes extra space at the end. <i>lsstrip()</i> removes the extra space on the left
+
+                            </p>
+                            <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/string-2.JPG')}}" alt="..." />
+                            <p> Output:</p>
+                            <p> First line shows that the fist letter turns to be Capital letter upon using <i>title()</i>.second line shows  all texts are in <i>lower</i>.line 5-8 demonstrates the use of tab and space. Last ine shows that the whitespace has been stripped off.
+                            <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/string_output.JPG')}}" alt="..." />
+                        <hr>
+                            <h6 class=text-muted id="lists"><i>Lists</i></h6>
+                            <p>List is a collection of items in a particular order.Lists are ordered collections, so that you can access any element in a alist by telling Python the position or <i>index</i> of the item desired.</p>
+                            <div class="col">
+                                <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/list.JPG')}}" alt="..." />
+
+                            </div>
+                            <div class="col-md-4">
+
+                                <p style="text-align:justify"> The example showcased have a list of flowers and we are attempting to access the flowers list,list[0] fetches the fiest element where as list[-3] fetches the value   </p>
+                                </div>
+
+                            <p>from third position from last </p>
+                            <p>Additional operations: Changing,adding and removing elements</p>
+                            <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/list-2.JPG')}}" alt="..." />
+                            <p> Output:</p>
+                            <p>the first two output shows how the values are accessed depending on position. The third output shows that the item <i>daisy</i> has been modified with <i>lavendar</i>.The rest shows adding and removing elements.The last line shows teh length of the list</p>
+                            <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/list-output.JPG')}}" alt="..." />
+                            <hr>
+                            <h6 class=text-muted id="tuples"><i>Tuples</i></h6>
+                            <p>List work well for storing collections of items that can change. However, sometimes you will want to create a list of items that cannot change.Python refers to values that cannot change as <i>immutable</i>
+                            and an immutable list is called <i>tuple</i></p>
+
+                                <div class="col">
+                                    <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/tuples.JPG')}}" alt="..." />
+                                </div>
+
+                                <div class="col-md-4">
+
+                                        <p style="text-align:justify"> Tuples look just like list expect you use parenthesis instead of square brackets. Although you cannot modify a tuple, you can assign a new set of values to a variable(reassignment)</p>
+                                    </div>
+
+                                    <p>that represents the tuple.In this example we have reassigned <i>(ford,tesla)</i> with <i>(audi,gm)</i> to the tuple variable <i>car</i></p>
+                                    <p>Output:</p>
+
+                                        <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/tuple_output.JPG')}}" alt="..." />
+                                    <hr>
+                            <h6 class=text-muted id="if-else"><i>Conditional statements</i></h6>
+                            <p>Decision making is required when we want to execute a code only if a certain condition is satisfied.
+
+                                The <i>if…elif…else </i>statement is used in Python for decision making.</p>
+
+
+                                    <div class="col">
+                                    <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/codesnip3.png')}}" alt="..." />
+                                        </div>
+                                        <div class="col-md-4">
+
+                                    <p style="text-align:justify"> The program evaluates the test expression and will execute statement(s) only if the test expression is True.If the condition for <i>if</i> is False, it checks the condition of the </p>
+                                    </div>
+
+                                <p>next <i>elif</i> block.If all the conditions are False, the body of <i>else</i> is executed.</p>
+                                <p>Example:</p>
+                                <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/condition.JPG')}}" alt="..." />
+
+                                <p>Output:</p>
+                                <p>The last two values passes through else hence only has been processed through <i>title()</i></p>
+                                <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/condition_output.JPG')}}" alt="..." />
+                                 <hr>
+                            <h6 class=text-muted id="forloop"><i>For loop</i></h6>
+                            <p>Iterating over a sequence of elements can be done using for loops.
+
+                            <div class="col">
+
+                                <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/codesnip4.png')}}" alt="..." />
+
+                            </div>
+                            <div class="col-md-4">
+
+                                <p style="text-align:justify"> The for loop in Python is used to iterate over a sequence (list, tuple, string) </p>
+                            </div>
+                            <p>or other iterable objects.Here, val is the variable that takes the value of the item inside the sequence on each iteration.
+
+                                Loop continues until we reach the last item in the sequence.</p>
+                            <p>Example:</p>
+                            <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/forloop.JPG')}}" alt="..." />
+
+                            <p>Output:</p>
+                            <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/forloop_output.JPG')}}" alt="..." />
+                            <hr>
+                            <h6 class=text-muted id="whileloop"><i>while loop</i></h6>
+                            <p>Loops are used in programming to repeat a specific block of code.Let's learn about while loop
+
+                            <div class="col">
+                                  <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/codesnip5.png')}}" alt="..." />
+                            </div>
+                            <div class="col-md-4">
+
+                                <p style="text-align:justify"> In the while loop, test expression is checked first. The body of the loop is </p>
+                            </div>
+                            <p>entered only if the test_expression evaluates to True. After one iteration, the test expression is checked again. This process continues until the test_expression evaluates to False.
+
+                                </p>
+                            <p>Example:</p>
+                            <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/while.JPG')}}" alt="..." />
+                            <p>Output:</p>
+                            <img class="img-fluid rounded mb-2 " src="{{url_for('static', filename='images/while_output.JPG')}}" alt="..." />
+
+
+
+                        </div>
+
+                    </div>
+                </section>
+
+            </article>
+            </div>
+        </div>
+
+        <!-- Side widgets-->
+
+        <div class="col-lg-4 mt-4">
+            <!-- Search widget-->
+            <div class="card mb-4 mt-7 bg-grey ">
+                <h5 class="highlight header-colorize text-uppercase ">Table of contents</h5>
+                <p class="header-colorize " style="padding-left: 90px"><a href="#getting_started">Introduction </a></p>
+
+                <p class="header-colorize " style="padding-left: 90px"><a href="#keyword">Keywords and Identifiers</a></p>
+                <p class=" header-colorize " style="padding-left: 90px"><a href="#variables">Variables</a></p>
+                <p class=" header-colorize " style="padding-left: 90px"><a href="#strings">Strings</a></p>
+                <p class=" header-colorize " style="padding-left: 90px"><a href="#lists">Lists</a></p>
+                <p class=" header-colorize " style="padding-left: 90px"><a href="#tuples">Tuples</a></p>
+                <p class=" header-colorize " style="padding-left: 90px"><a href="#if-else">Conditional Statements</a></p>
+                <p class=" header-colorize " style="padding-left: 90px"><a href="#forloop">For loop</a></p>
+                <p class=" header-colorize " style="padding-left: 90px"><a href="#whileloop">While loop</a></p>
+
+
+            </div>
+            <div class="card mb-4 ">
+                <div class="card-header text-md-center text-center">Code Repositories for Hand On training</div>
+                <div class="card-body">
+                    <div class="row text-md-center text-center" >
+                        <!--                        <div class="col-md-6">-->
+                        <!--                            <ul class="list-inline-item  mb-0">-->
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/python_concepts">python_basic_concepts</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/SOLID">Understanding SOLID principles</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/branch1">AAA testing with External data</a></p>
+                        <p ><a href="https://github.com/njitvjk/Project2_crashcource/tree/calc_part2">OOPS concepts using Calculator Program</a></p>
+                        <p ><a href="  https://github.com/njitvjk/calc2/tree/calc_part3">Calculator Program with tuples</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4 ">
+                <div class="card-header text-md-center text-center">Online Resources</div>
+                <div class="card-body">
+                    <div class="row text-md-center text-center" >
+                        <p ><a href="https://www.programiz.com/python-programming">Python for beginners</a></p>
+                        <p ><a href="https://www.python.org/">Official Python Website</a></p>
+                        <p ><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Wikipedia-Python</a><p>
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <!-- Categories widget-->
+
+            <!-- Side widget-->
+
+        </div>
+    </div>
+</div>
+{% endblock %}

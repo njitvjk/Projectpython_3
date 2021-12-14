@@ -1,4 +1,3 @@
-
 $( document ).ready(function() {
     // CHANGE TO STICKY NAV
 	$(window).scroll(function() {
