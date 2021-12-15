@@ -12,7 +12,7 @@
 #### Vedio 
 https://youtu.be/l-TNMeY0jc0
 
-Note: Please skip few seconds when we see pytest.Linting took some minutes.last few minutes shows coverage and test passing
+Note: Please skip few seconds when we see pytest.Linting took some minutes.last few seconds show coverage and test passing
 
 #### Screenshots
 
