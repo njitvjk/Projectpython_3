@@ -32,7 +32,7 @@ Note: Please skip some minutes when we see pytest.Linting took some minutes.last
       Calculator form
 ![image](https://user-images.githubusercontent.com/90334123/146117653-49c648ff-8261-4af3-891b-995d2bc45b94.png)</br>
 
-      Operation
+      Operation - all operations are explained in vedio ,just for screenshot- addition is shown here
 ![image](https://user-images.githubusercontent.com/90334123/146117580-ec71520f-b326-412f-98c3-1b5ada7b6833.png)
 </br>
 
