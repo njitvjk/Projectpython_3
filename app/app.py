@@ -1,7 +1,6 @@
 """A simple flask web app"""
 import re
 
-
 import pandas as pd
 
 from flask import Flask, request
@@ -32,9 +31,9 @@ def calculator():
         elif validate_value1 is None or validate_value2 is None:
             error = 'Invalid Input: Values can only be numbers'
             return render_template('basicform.html', error=error)
-        # elif validate_value2 is None:
-        #     error = 'Invalid Input: Values can only be numbers'
-        #     return render_template('basicform.html', error=error)
+        elif request.form['value2'] == '0' and request.form['operation'] == 'division':
+            error = 'Invalid Input: Attempt to divide by zero'
+            return render_template('basicform.html', error=error)
 
         else:
             value1 = request.form['value1']
