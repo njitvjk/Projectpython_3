@@ -37,7 +37,7 @@ Note: Please skip some minutes when we see pytest.Linting took some minutes.last
 </br>
 
       Results and History
-![image](https://user-images.githubusercontent.com/90334123/146117778-1bde2fbe-db29-4c57-8267-f99a268af811.png)</br>
+![image](https://user-images.githubusercontent.com/90334123/146118908-0719d077-2330-407a-89e8-14756cd18cf2.png)</br>
 
       Validations- app.py renders the this page again upon submission. Error messages or Output or Tables are displayed depending on Input.
  Empty textbox</br>
