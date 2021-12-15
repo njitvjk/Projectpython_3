@@ -25,7 +25,7 @@ Note: Please skip few seconds when we see pytest.Linting took some minutes.last 
 
 ![image](https://user-images.githubusercontent.com/90334123/146116798-804028c8-900b-4394-888f-4ed9d9e2bab8.png)</br>
 
-      Calculator WebPage
+      Calculator WebPage- Clicking on the badge will redirect to a page where calculator form is displayed
 
 ![image](https://user-images.githubusercontent.com/90334123/146117094-34bb51d7-52d5-47f4-b243-6694ed3897cf.png)</br>
 
