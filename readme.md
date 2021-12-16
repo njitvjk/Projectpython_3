@@ -40,12 +40,19 @@ Note: Please skip few seconds when we see pytest.Linting took some minutes.last 
 </br>
 
       Results and History
-![image](https://user-images.githubusercontent.com/90334123/146118908-0719d077-2330-407a-89e8-14756cd18cf2.png)</br>
+![image](https://user-images.githubusercontent.com/90334123/146291720-ec104b2c-2cb4-4cd6-a712-eedd86610aba.png)
+</br>
 
       Validations- app.py renders the this page again upon submission. Error messages or Output or Tables are displayed depending on Input.
  Empty textbox</br>
 ![image](https://user-images.githubusercontent.com/90334123/146117938-e547b32a-54a9-4788-8834-7ff6e93d2013.png)
 ![image](https://user-images.githubusercontent.com/90334123/146117976-51d3c74f-06c0-4040-9c7d-09e435c540b1.png)</br>
+
+Empty Text Boxes - Both Values <br/>
+![image](https://user-images.githubusercontent.com/90334123/146117094-34bb51d7-52d5-47f4-b243-6694ed3897cf.png
+![image](https://user-images.githubusercontent.com/90334123/146292010-396e5c9a-9a88-4cdd-86c6-88b149c0e602.png)</br>
+
+
 
 Special Characters </br>
 ![image](https://user-images.githubusercontent.com/90334123/146118045-b0461c36-1583-46c6-885b-f2685e8e09c1.png)
