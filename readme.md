@@ -1,7 +1,7 @@
 # Project 3
 ### Tasks
       1.Total WebPages Pages - 6 
-            1. Project 2 pages -Home Page, Python basics, Continous Integration , Design Pattern, Simple calculator (Flask and simple calc demonstration )
+            1. Project 2 pages  -Home Page, Python basics, Continous Integration , Design Pattern, Additional WebPage describing Flask and simple calculator
             2. Seperate Webpage  displaying Calculator form , Validation with Flash messages ,Output and history table
             
       2.Responsive design implemented
