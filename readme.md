@@ -24,7 +24,7 @@ Note: Please skip few seconds when we see pytest.Linting took some minutes.last 
 
  ![image](https://user-images.githubusercontent.com/90334123/146118520-f8bf2f69-97e0-4466-a686-9ddcc0796a7b.png)
 
-     HomePage
+       HomePage
 
 ![image](https://user-images.githubusercontent.com/90334123/146116798-804028c8-900b-4394-888f-4ed9d9e2bab8.png)</br>
 
@@ -44,21 +44,21 @@ Note: Please skip few seconds when we see pytest.Linting took some minutes.last 
 </br>
 
       Validations- app.py renders the this page again upon submission. Error messages or Output or Tables are displayed depending on Input.
- Empty textbox</br>
+ #### Empty textbox</br>
 ![image](https://user-images.githubusercontent.com/90334123/146117938-e547b32a-54a9-4788-8834-7ff6e93d2013.png)
 ![image](https://user-images.githubusercontent.com/90334123/146117976-51d3c74f-06c0-4040-9c7d-09e435c540b1.png)</br>
 
-Empty Text Boxes - Both Values <br/>
-![image](https://user-images.githubusercontent.com/90334123/146117094-34bb51d7-52d5-47f4-b243-6694ed3897cf.png
+#### Empty Text Boxes - Both Values <br/>
+![image](https://user-images.githubusercontent.com/90334123/146117653-49c648ff-8261-4af3-891b-995d2bc45b94.png)
 ![image](https://user-images.githubusercontent.com/90334123/146292010-396e5c9a-9a88-4cdd-86c6-88b149c0e602.png)</br>
 
 
 
-Special Characters </br>
+#### Special Characters </br>
 ![image](https://user-images.githubusercontent.com/90334123/146118045-b0461c36-1583-46c6-885b-f2685e8e09c1.png)
 ![image](https://user-images.githubusercontent.com/90334123/146118078-dabc965a-1498-495a-8344-dd20c6ead4e3.png)
 
-Divisionby zero </br>
+#### Divisionby zero </br>
 
 ![image](https://user-images.githubusercontent.com/90334123/146118122-b7d83f0b-2426-4110-9783-8e1451809a59.png)
 ![image](https://user-images.githubusercontent.com/90334123/146118148-a772fb35-92a0-4e12-aa26-13bbe8cff8f2.png)</br>
