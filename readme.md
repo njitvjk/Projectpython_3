@@ -1,6 +1,9 @@
 # Project 3
 ### Tasks
-      1.Includes 4 pages from Project2(Including HomePage)
+      1.Total WebPages Pages - 6 
+            1. Project 2 pages -Home Page, Python basics, Continous Integration , Design Pattern, Simple calculator (Flask and simple calc demonstration )
+            2. Seperate Webpage  displaying Calculator form , Validation with Flash messages ,Output and history table
+            
       2.Responsive design implemented
       3.The user can click on a link for a calculator
       4.The user inputs two numbers into a web form and select one of the arithmetic operations (addition, subtraction, multiplication,division)
